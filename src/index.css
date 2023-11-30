@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .background-dark {
+    background: linear-gradient(139.73deg, #313d5c 0%, #3d2a54 100%);
+  }
+
+  .background-light {
+    background: linear-gradient(139.73deg, #e5fdff 0%, #f3efff 100%);
+  }
+
+  .nav-dark {
+    background: #27262c;
+  }
+
+  .nav-light {
+    background: #fff;
+  }
+
+  .token-form-light {
+    background: #eeeaf4;
+  }
+
+  .token-form-dark {
+    background: #372f47;
+  }
+
+  .swap-button-light {
+    background: #ede6ff;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+  }
+}
+
+.active-theme {
+  filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
+    brightness(104%) contrast(106%) !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
